@@ -1,6 +1,6 @@
 // 主要功能：提供測驗相關的 API，讓前端可以隨機抽題和提交作答結果。有兩支 API：
-// GET  /api/quiz/random
-// POST /api/quiz/submit
+// GET  /api/quiz/random: 從資料庫裡隨機抽 5 題，回傳給前端顯示測驗題目和選項。
+// POST /api/quiz/submit: 接收前端提交的作答結果，計算答對題數，然後把積分加到目前使用者身上，最後回傳答對題數和加的積分給前端顯示測驗結果。
 
 
 import express from 'express'  // 引入 Express 框架

@@ -1,6 +1,6 @@
 // 主要功能：提供社群牆貼文相關的 API，讓前端可以讀取和新增貼文。有兩個 API：
-// GET  /api/posts
-// POST /api/posts
+// GET  /api/posts: 從資料庫裡讀取貼文資料，包含貼文內容、圖片路徑、發文者名稱和發文時間，回傳給前端顯示社群牆。
+// POST /api/posts: 接收前端提交的貼文內容和圖片，從 session 取得目前使用者 ID，然後把這些資料寫入資料庫，最後回傳剛剛新增的那筆貼文資料給前端更新社群牆畫面。
 
 
 import express from 'express'  // 引入 Express 框架

@@ -1,7 +1,7 @@
 // 主要功能：「永續挑戰打卡功能」的後端 API 檔案，提供 3 個 API：
-// GET  /api/challenges
-// POST /api/challenges/complete
-// POST /api/challenges/reset
+// GET  /api/challenges: 取得目前使用者的所有挑戰任務，並一起回傳完成進度摘要。
+// POST /api/challenges/complete: 接收前端送來的任務 ID，代表使用者完成了這個任務，後端要寫入完成紀錄、加分，並告訴前端目前這些任務是否已經全部完成，可以重置了？
+// POST /api/challenges/reset: 接收前端送來的重置請求，代表使用者要重置整輪任務，後端要檢查是否全部任務都完成了，如果有，就額外加分並清空完成紀錄，讓整輪任務重新開始；如果沒有，就拒絕這個請求，告訴前端還不能重置。
 
 
 import express from 'express'  // 引入 Express 框架

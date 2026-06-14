@@ -108,7 +108,7 @@ async function register() {
 }
 
 .login-card {
-  width: min(480px, 100%);
+  width: min(620px, 100%);
   padding: 32px;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.84);
@@ -150,7 +150,7 @@ async function register() {
 h1 {
   margin: 10px 0 14px;
   line-height: 1.2;
-  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
   white-space: nowrap;
 }
 
@@ -202,7 +202,7 @@ input {
   color: #246b4d;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   h1 {
     white-space: normal;
   }
