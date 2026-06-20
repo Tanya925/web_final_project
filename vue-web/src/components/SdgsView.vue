@@ -80,8 +80,8 @@ onMounted(() => {
 
 .card-grid {
   display: grid;
-  /* 把每張卡牌的最小寬度拉大，讓較長的中英文標題有更多空間可以顯示。 */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* 把每張卡牌的寬度再放大，讓背面較長介紹更容易完整呈現。 */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 22px;
 }
 
